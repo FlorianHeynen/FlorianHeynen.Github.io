@@ -92,6 +92,20 @@
 
 			}
 
+			.video-container {
+				position: relative;
+				padding-bottom: 56.25%; /* 16:9 aspect ratio (9 / 16 = 0.5625) */
+				height: 0;
+				overflow: hidden;
+			}
+
+			.video-container iframe {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+			}
 
 
 		</style>
@@ -170,8 +184,9 @@
 					<div id="tab1" class="tab">
 						<header class="major">
 							<h2>Showreel</h2>
-						<iframe width="100%" height="520" src="https://www.youtube.com/embed/3HadmaQRHmk"title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></iframe></a>
-						</ul>
+							<div class="video-container">
+								<iframe width="100%" height="100%" src="https://www.youtube.com/embed/3HadmaQRHmk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+							</div>						</ul>
 						<br>
 						<br>
 						<h3>Games I have worked on</h3>
@@ -319,17 +334,20 @@
 								<h2>About me</h2>
 							</header>
 							<p>
-								Hello, my name is Florian and I am a technical sound designer. I just finished my studies, Interactive sound Production studies at Digital Arts and Entertainment in Kortrijk, Belgium.
-								I grew up and currently live in Antwerp.
-								<br><br>
-								
-								I Just finished a 5 month Internship at Demute, a game audio outscourcing company. 
-								During my Internship I had the oppurtunity to work on several commersial games both indie and AAA as a technical sound designer.
-								I also was audio lead for a small (unannounced) Indie game.
-								<br><br>
-								I have been 
-								
+								I am a technical sound designer and audio programmer. I have recently completed an internship at 
+								Demute in Brussels as part of my Interactive Sound Design studies at DAE.
 
+								I have been a hobbyist game developer for about 6 years, making small games and participating in game jams. 
+
+								Over the past few years, I have specialized in the audio aspects of games. Learning sound design and music has been 
+								the most fulfilling experience in my game development journey, so I decided to pursue it as a career. 
+								
+								Thanks to personal projects and my education at DAE, I have gained experience in every facet of game development. 
+								My technical know-how and creative abilities position me as a valuable asset for any game development studio. 
+								I love working in a team and solving problems together. 
+
+								Constantly seeking ways to improve my sound design or to make workflows more efficient. 
+								I am open to work at either indie or AA(A) companies, my primary goal is to join a passionate team committed to creating great games.
 
 							</p>
 						</section>
@@ -432,7 +450,6 @@
 					<ul class="icons">
 						<li><a href="https://www.linkedin.com/in/florian-heynen-172681247/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
 						<li><a href="https://www.youtube.com/@florianheynen5575/playlists" class="icon brands fa-youtube"><span class="label">Youtube</span></a></li>
-						<li><a href="https://discord.com/users/9041" class="icon brands fa-discord"><span class="label">Discord</span></a></li>
 
 					</ul>
 					<ul class="copyright">
